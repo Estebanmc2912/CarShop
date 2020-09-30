@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">CarShop</string>
+    <string name="type">Tipo: </string>
+    <string name="model">Modelo: </string>
+</resources>
