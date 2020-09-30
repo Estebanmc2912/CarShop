@@ -38,6 +38,18 @@ class MainAdapter (private val context:Context, private val bundle: Bundle?): Re
                 val intent = Intent(context, PublicationActivity::class.java)
                 //val obj = bundle!!.getSerializable("Car_Model") as Car_Model
                 //intent.putExtra("Car_Model", publication)
+                var list = ArrayList<String>()
+                list.add(publication.image)
+                list.add(publication.mark)
+                list.add(publication._model)
+                list.add((publication.category).toString())
+                list.add(if(publication.used){"true"}else{"false"})
+                list.add( (publication.time_years).toString() )
+                list.add(publication.description)
+                list.add(publication.add)
+                intent.putStringArrayListExtra("publication",list)
+
+                // thanks to attribute 'GeoPoint', we can't just put an instance throw an startActivity, because this variable isn't serializable or parceable
                 context.startActivity(intent)
             })
 

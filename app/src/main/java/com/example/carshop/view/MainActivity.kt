@@ -26,6 +26,8 @@ class MainActivity : AppCompatActivity() , Serializable{
         rv_menu.adapter= adapter
         observeData()
 
+        /// Data to try the application without a databse
+
         /*val dummyList:MutableList<Car_Model> = mutableListOf<Car_Model>()
 
 

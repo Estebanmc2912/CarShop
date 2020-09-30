@@ -7,9 +7,6 @@ import com.google.firebase.firestore.FirebaseFirestore
 import java.io.Serializable
 
 class Repo : Serializable{
-    /*fun getCar_ModelData():LiveData<MutableList<Car_Model>>{
-        val mutableData = MutableLiveData<MutableList<Car_Model>>()
-    }*/
 
     fun getCar_ModelData():LiveData<MutableList<Car_Model>>{
         val mutableData = MutableLiveData<MutableList<Car_Model>>()
